@@ -8,5 +8,5 @@ RUN npm install --global gulp-cli
 
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/fpm/php.ini
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/cli/php.ini
-
+EXPOSE 9000
 CMD ["php-fpm"]
